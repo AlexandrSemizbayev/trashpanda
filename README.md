@@ -18,7 +18,7 @@ The author was too lazy to manually delete all node_modules folders on his lapto
 The installation process is very simple, especially if you already have experience with npm or Node.js:
 ```
 
- $ npm i -g trash-panda && trashpanda
+ $ npm i -g @jstormer/trashpanda && trashpanda
 
  ```
 

@@ -1,7 +1,7 @@
 {
   "name": "@jstormer/trashpanda",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple Node.js CLI to find and delete matching folders or files",
   "type": "module",
   "main": "index.js",
