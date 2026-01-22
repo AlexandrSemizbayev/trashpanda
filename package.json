@@ -1,18 +1,40 @@
 {
-  "name": "delete_modules",
-  "type": "module",
+  "name": "@jstormer/trashpanda",
   "version": "1.0.0",
+  "description": "A simple Node.js CLI to find and delete matching folders or files",
+  "type": "module",
   "main": "index.js",
-  "directories": {
-    "test": "test"
+  "bin": {
+    "trashpanda": "./index.js"
   },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "cli",
+    "nodejs",
+    "duplicate",
+    "files",
+    "folders",
+    "cleanup",
+    "filesystem",
+    "delete",
+    "scan"
+  ],
+  "author": "Alexandr Semizbayev aka JStormer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexandrSemizbayev/trashpanda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexandrSemizbayev/trashpanda/issues"
+  },
+  "homepage": "https://github.com/AlexandrSemizbayev/trashpanda#readme",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "inquirer": "^13.1.0"
   }

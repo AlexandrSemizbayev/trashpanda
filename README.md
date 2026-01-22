@@ -1,4 +1,7 @@
-# Trashpanda 🦝
+<div align="center">
+  <img src="logo.png" alt="project logo with a raccoon on it cleaning your files" width="300">
+</div>
+<h1 align="center">@jstormer/trashpanda 🦝</h1>
 
 A simple Node.js script to find and delete all matching folders or files.
 
@@ -15,7 +18,7 @@ The author was too lazy to manually delete all node_modules folders on his lapto
 The installation process is very simple, especially if you already have experience with npm or Node.js:
 ```
 
- $ npm i && node index.js
+ $ npm i -g trash-panda && trashpanda
 
  ```
 
@@ -88,3 +91,6 @@ The installation process is very simple, especially if you already have experien
   src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2o5b3l4cWk1bGJucDViNjZnazdnbHhwamJqMWYzOWdjN3RqM2ltOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1dagNhv8Oqu6l8U3ZK/giphy.gif"
 />
 </div>
+
+
+<p>P.S. Since someone already made a useless package called trashpanda about 10 years ago, I had to go with <b><u>@jstormer/trashpanda</u></b>. But in my heart, it will always be TrashPanda.✌️</p>
