@@ -6,7 +6,7 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "trashpanda": "./index.js"
+    "trashpanda": "index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexandrSemizbayev/trashpanda.git"
+    "url": "git+https://github.com/AlexandrSemizbayev/trashpanda.git"
   },
   "bugs": {
     "url": "https://github.com/AlexandrSemizbayev/trashpanda/issues"
