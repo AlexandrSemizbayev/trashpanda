@@ -24,64 +24,7 @@ The installation process is very simple, especially if you already have experien
 
 ## Flow:
 
-```mermaid
-  flowchart TD
-    FS['User saves file at:'] --> RP['/Users/that_cool_user/messy_projects/downloads/clean_up']
-    NEED['Since he needs to clean up all folders in messy_projects, he runs clean_up with following paths]
-    NEED --> ABS['../../']
-    NEED --> REL['/Users/that_cool_user/messy_projects']
-    NEED --> DG[Or simply drag'n'drop the messy_projects folder into terminal]
-    FINAL_PATH['Result is: /Users/that_cool_user/messy_projects']
-    ABS --> FINAL_PATH
-    REL --> FINAL_PATH
-    DG --> FINAL_PATH
-    RP --> NEED
-    FINAL_PATH --> NAME
-    NAME[Next step: enter file or folder name, you want to delete. For example: node_modules]
-    NAME --> ALL
-    ALL[Are you willing to delete all matches in] ATT2@--> FINAL_PATH
-    ALL ==> YES[Yes]
-    YES ==> YM[Gotcha, all folders and subfolders will be scaned]
-    ALL ==> NO[No]
-    NO ==> NM[In case you was to exclude some folders from search]
-    ATT{No matter what you select, the project will be excluded from search}
-
-    YES --> ATT
-    NO  --> ATT
-    ATT ATT1@--> RP
-
-    NM --> EXCL[Enter folder paths to exclude, one by one] 
-    EXCL --> SCAN
-    YM --> SCAN
-    SCAN[Scanning...] --> SCANRES[
-        !!!
-        Review matched and structured files
-    ]
-    SCANRES ==> INPT[Do the matches align your request:]
-    INPT ==> yeah[yes] ==> delete[Deleting matches]
-    INPT ==> nope[no] ==> ok[Ok, maybe next time]
-    
-
-
-
-
-    style RP color: #ffc902
-    classDef ATTENTION stroke: #ffc902, color: #ffc902
-    classDef SUCCESS color: #8ec902, stroke: #8ec902
-    classDef DANGER color: red, stroke: red
-    class ABS ATTENTION
-    class REL ATTENTION
-    class DG ATTENTION
-    class FINAL_PATH SUCCESS
-    class SCANRES DANGER
-    class yeah SUCCESS
-    class delete SUCCESS
-    class SCAN SUCCESS
-    style ATT stroke: #ffc902, color: #ffc902
-    classDef attArrow stroke: #ffc802, stroke-dasharray: 9,5,stroke-dashoffset: 900,animation: dash 25s linear infinite;
-    class ATT1 attArrow
-    class ATT2 attArrow
-```
+<img src="https://mermaid.ink/svg/pako:eNqVVm1v4kYQ_isT9wNfHN6SEHB1p6OBpJHAiYCTejUIbewB3Ni7dHd9hEb57531GvNSWvVIEJ6XZ3aeeVl4d0IRoeM5i0RswhWTGia9KQd63Y-DyleFEhT7jgoWcYLAtFeZweXlZxg9B5WaMauaXjE9D4VI5hnJtRSV2s7XUvyBoVa1SGx4IlikamGCjM-zdWVmD_D7_V5QGcc8RFghcMRIgRaQ-0G2BpYksBBJRIdAzOE4sGswMuMKdnFhE-uVARCVmC9hzfRKHZyV5939hWhVqzX6r5zaRv3B_yP1D2TvIXiiQsXpOtlCJNmywiuRFGvQlOQxtmBEhIiqRpnGnCVFvPtHvzuYP3cnvwaVEaos0RArD34kJeKXZ7QPZfXE7ay-93De_TlXG4KnqVlDd9gvakBPgY9vGpTGtQfIiZSdFiF3ZDlL0YWtyGDDuDZNjjBBjVW4Jyd8Y1Q49IDTLM5TEWUJlo2j8LZxg0HBcDAIuhJttDhJTKvLgPnMpEyHKzQzM4PuZNL8co4hhYFPnz7Dt_44-FYeR5LVDoMHQVGYezSFjEegspedaI6HFwQVMo7R7Diw_xT4YsfiyaqGwSOHkKkie5bPO76FSRZRFJFiedJCihQUMhmudnEnk3dfGHKmwBsahjyIIt6hdvNJK4ahzKuIHB1G-5jyPdW8sJNJmeSxgh7Mu_HFLvwO6A9zt_5vd4Ogb7ttu5wv3AEjFwRHeNmajxlYsEHl8PFd1y8SGZ4ozFMwpppy6m21Wp2V9hE1y_qY18XFxV4Y4fcYN0XvI9spLbNQZ9IUgOZRWefZ_pBR0e1H_3kS9ITd1mJ4WBIvuamwBIl_Zqi0VyCNdw7bIlsFW5qdXLIDGPTMh5nJItApiIs1BlxYjHgNnl5dct2-mAuQlkjHKRYQU2_7ZySlt7RStJehSIT04KfFIuzUm9YYJkypHi5Mu_r-5PHJN-TFK5Z-7n_jxl_v7vrjcenURgsqo1jFCarX9R_6ox2I6rwHkHDgnF9LZW6HBnMvnTXQxXRWf3ARFUkfWnddtZkdWkyzziGKe-NfYh3rbQ_MWvxYdWllu1KKzRGsva_vZcQUffdKtvWg4964B1qxWCjUpK7XXcZjGqpYcA-MCZo3Cuj6o7Wmq24R81jjz0dFp90tzz4xNE8MjussZRw5Hu0Muk5KX0zMiM67sU8dWo0Up45HjxGTr1Nnyj8Is2b8dyHSHUyKbLlyvAVLFEnZOmIaezFbSpaWWomcLos7kXHteNf1Vh7E8d6dNxKb19WbTuvq9rrVal516q1r19k63mWz2a7eNuuNTv36qtFotludD9f5Kz-4Ua23b1q3rfrtdb3ZrjduGq6DUayFHNpfNvkPnI-_AREQyKU" alt="diagram explaining the steps of the package usage">
 
 
 
