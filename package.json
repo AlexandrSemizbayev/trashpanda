@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/AlexandrSemizbayev/trashpanda#readme",
   "engines": {
-    "node": ">=16"
+    "node": ">=21"
   },
   "dependencies": {
     "inquirer": "^13.1.0"
